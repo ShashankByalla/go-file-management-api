@@ -24,7 +24,7 @@ This is a backend project for managing user authentication, file uploads, and fi
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/ShashankByalla/21BCE9151_Backend.git
 cd 21BCE9151_Backend
 
