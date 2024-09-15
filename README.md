@@ -28,12 +28,12 @@ This is a backend project for managing user authentication, file uploads, and fi
 ```git clone https://github.com/ShashankByalla/21BCE9151_Backend.git```
 ```cd 21BCE9151_Backend ```
 
-2. Install Dependencies
+## 2. Install Dependencies
 
 Make sure you have Go installed. Then run:
-go mod tidy
+```go mod tidy```
 
-3. Configure PostgreSQL
+## 3. Configure PostgreSQL
 
 Ensure PostgreSQL is installed and running. Create a database and a user for the project:
 CREATE DATABASE file_management_db;
@@ -42,7 +42,7 @@ GRANT ALL PRIVILEGES ON DATABASE file_management_db TO file_user;
 
 Update the db.go file with your database credentials if they differ from the defaults.
 
-4. Update Configuration
+## 4. Update Configuration
 
 Edit upload.go to set the correct AWS S3 bucket name and region, if you are using S3:
 
@@ -50,10 +50,10 @@ Edit upload.go to set the correct AWS S3 bucket name and region, if you are usin
 Bucket: aws.String("your-bucket-name"),
 Region: aws.String("us-west-2"),
 
-5. Run the Application
+## 5. Run the Application
 
 Start the application using:
-go run main.go
+```go run main.go```
 
 The server will start on port 8080 by default. You can change this in the main.go file if needed.
 
