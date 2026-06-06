@@ -3,6 +3,7 @@ package main
 import (
     "net/http"
     "encoding/json"
+    "fmt"
     "github.com/go-redis/redis/v8"
     "context"
     "time"
@@ -20,7 +21,7 @@ func initRedis() {
 func getFilesHandler(w http.ResponseWriter, r *http.Request) {
     userID := 1 // replace with actual user ID from JWT claims
 
-    cacheKey := "files_user_" + string(userID)
+    cacheKey := "files_user_" + fmt.Sprintf("%d", userID)  // ← CORRECT
     cachedFiles, err := redisClient.Get(ctx, cacheKey).Result()
     if err == redis.Nil {
         rows, err := db.Query("SELECT id, file_name, upload_date, file_size, s3_url FROM files WHERE user_id=$1", userID)
