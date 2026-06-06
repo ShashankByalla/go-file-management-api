@@ -1,6 +1,6 @@
 # 🗂️ Go File Management API
 
-![Go Build & Test](https://github.com/ShashankByalla/go-file-management-api/actions/workflows/go-test.yml/badge.svg)
+![Go Build & Test](https://github.com/ShashankByalla/go-file-management-api/actions/workflows/go-test.yml/badge.svg?branch=main)
 ![Language](https://img.shields.io/badge/Language-Go-00ADD8)
 ![Database](https://img.shields.io/badge/Database-PostgreSQL-336791)
 ![Storage](https://img.shields.io/badge/Storage-AWS%20S3-FF9900)
