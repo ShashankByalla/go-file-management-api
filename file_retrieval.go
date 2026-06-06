@@ -2,7 +2,6 @@ package main
 
 import (
     "net/http"
-    "log"
     "encoding/json"
     "github.com/go-redis/redis/v8"
     "context"
