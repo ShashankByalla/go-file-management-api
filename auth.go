@@ -4,7 +4,6 @@ import (
     "github.com/dgrijalva/jwt-go"
     "time"
     "net/http"
-    "log"
     "encoding/json"
 )
 
