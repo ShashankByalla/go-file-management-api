@@ -6,7 +6,6 @@ import (
     "github.com/aws/aws-sdk-go/service/s3"
     "net/http"
     "os"
-    "log"
     "time"
 )
 
